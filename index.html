@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+        <title>Timer App</title>
+    </head>
+    <body>
+        <h1>Timer App</h1>
+
+        <div>
+            <label for="hours">Hours:</label>
+            <input type="number" id="hours" placeholder="0" min="0">
+            <label for="minutes">Minutes:</label>
+            <input type="number" id="minutes" placeholder="0" min="0" max="59">
+            <label for="seconds">Seconds:</label>
+            <input type="number" id="seconds" placeholder="0" min="0" max="59">
+            <label for="tenths">Tenths:</label>
+            <input type="number" id="tenths" placeholder="0" min="0" max="9">
+        </div>
+
+        <div>
+            <label for="countMode">Mode:</label>
+            <select id="countMode">
+                <option value="countdown">Countdown</option>
+                <option value="countup">Count Up</option>
+            </select>
+        </div>
+
+        <button id="startButton">Start</button>
+        <button id="pauseButton">Pause</button>
+        <button id="resetButton">Reset</button>
+
+        <div>
+            <h2>Time: <span id="timerDisplay">00:00:00:0</span></h2>
+        </div>
+
+        <div id="media-container">
+            <div id="iframe-container-a">
+                <iframe
+                    id="music-player-pop"
+                    title="Music Player"
+                    width="560"
+                    height="315"
+                    src="https://www.youtube.com/embed/Ef4e9QGhonY?si=yb81gQnu2crzlOuJ"
+                    alt="Youtube-video: Billboard Pop Songs 2024 Playlist💎Maroon 5, Rihanna, Ed Sheeran, The Weeknd, Adele, Dua Lipa, Sia"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    allowfullscreen>
+                </iframe>
+            </div>
+
+            <div id="billboard-div">
+                    <a href="microsoft-edge:https://www.youtube.com/watch?v=cF1Na4AIecM&list=PLDIoUOhQQPlWc-Kd6TCjTRIl0Z6fSQV0X" target="_blank">Billboard Top 50
+                    <img id="billboard-img" src="pexels-freestockpro-1031700.jpg" alt="Billboard top songs">
+                    </a>
+            </div>
+
+            <div id="iframe-container-b">
+                <iframe
+                    id="music-player-classic-a"
+                    width="560"
+                    height="315"
+                    src="https://www.youtube.com/embed/_F4rdFQv4c4?si=JYhjuLJjyIr1V_tK"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    allowfullscreen>
+                </iframe>
+            </div>
+
+            <div id="iframe-container-c">
+                <iframe
+                    id="music-player-classic-b"
+                    width="560"
+                    height="315"
+                    src="https://www.youtube.com/embed/PYjHiuBAWQU?si=a1B_hJEqu3D6AvKY"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    allowfullscreen>
+                </iframe>
+            </div>
+
+            <div id="iframe-container-d">
+                <iframe
+                    id="music-player-classic-c"
+                    width="560"
+                    height="315"
+                    src="https://www.youtube.com/embed/Z4vDwEjNEd4?si=lsmSq2cXTvWuUxxm"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+
+
+        <audio
+            id="alarmSound"
+            title='"Oversimplified", by Lesiakower'
+            src="oversimplified-alarm-clock-113180.mp3"
+            alt="Oversimplified [ALARM CLOCK], by Lesiakower, from: https://pixabay.com/sound-effects/oversimplified-alarm-clock-113180/"
+            preload="auto">
+        </audio>
+
+        <script src="app.js"></script>
+    </body>
+    </html>
+

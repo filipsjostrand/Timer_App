@@ -1,0 +1,48 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin-top: 50px;
+}
+
+button {
+    margin: 10px;
+    padding: 10px 20px;
+}
+
+input[type="number"], select {
+    margin: 10px;
+    padding: 5px;
+}
+
+#media-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#iframe-container-a,
+#iframe-container-b,
+#iframe-container-c,
+#iframe-container-d {
+    display: flex;
+}
+
+#billboard-div {
+    display: flex;
+    padding-top: 10px;
+    cursor: pointer;
+}
+
+#billboard-img {
+    width: 560px;
+    height: 315px;
+    display: flex;
+    object-fit: cover;
+}
+
+#music-player-classic-a,
+#music-player-classic-b,
+#music-player-classic-c {
+    padding-top: 25px;
+}
