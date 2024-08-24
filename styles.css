@@ -23,8 +23,9 @@ input[type="number"], select {
 
 #iframe-container-a,
 #iframe-container-b,
-#iframe-container-c,
-#iframe-container-d {
+#iframe-container-c
+#iframe-container-e,
+#iframe-container-x {
     display: flex;
 }
 
@@ -43,6 +44,7 @@ input[type="number"], select {
 
 #music-player-classic-a,
 #music-player-classic-b,
-#music-player-classic-c {
+#music-player-classic-d,
+#music-player-classic-x {
     padding-top: 25px;
 }
